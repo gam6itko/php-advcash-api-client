@@ -6,7 +6,7 @@ namespace Gam6itko\AdvCash;
  * MerchantWebService
  * @author WSDLInterpreter
  */
-class MerchantWebService extends SoapClient
+class MerchantWebService extends \SoapClient
 {
     /**
      * Default class map for wsdl=>php
