@@ -1,0 +1,13 @@
+{
+    "name": "gam6itko/advcash-api-client",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "ext-soap": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gam6itko\\AdvCash\\": "src"
+        }
+    }
+}
