@@ -7,5 +7,5 @@ composer req gam6itko/advcash-api-client
 ```
 
 ```php
-
+use Gam6itko\AdvCash\MerchantWebService;
 ```
