@@ -14,12 +14,12 @@ class advcashCardTransferRequestDTO
     public $amount;
     /**
      * @access public
-     * @var tnscardType
+     * @var scardType
      */
     public $cardType;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $currency;
     /**

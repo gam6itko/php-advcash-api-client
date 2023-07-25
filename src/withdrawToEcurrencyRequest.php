@@ -9,7 +9,7 @@ class withdrawToEcurrencyRequest extends moneyRequest
 {
     /**
      * @access public
-     * @var tnsecurrency
+     * @var ecurrency
      */
     public $ecurrency;
     /**

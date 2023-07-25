@@ -9,17 +9,17 @@ class currencyExchangeRequest extends moneyRequest
 {
     /**
      * @access public
-     * @var tnscurrencyExchangeAction
+     * @var currencyExchangeAction
      */
     public $action;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $from;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $to;
 }

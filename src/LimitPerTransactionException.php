@@ -19,22 +19,22 @@ class LimitPerTransactionException
     public $maxAmount;
     /**
      * @access public
-     * @var tnscoinName
+     * @var scoinName
      */
     public $coinName;
     /**
      * @access public
-     * @var tnsdepositPaymentMethodType
+     * @var sdepositPaymentMethodType
      */
     public $depositPaymentMethodType;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $currency;
     /**
      * @access public
-     * @var tnsexceptionType
+     * @var sexceptionType
      */
     public $type;
 }

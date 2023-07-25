@@ -14,7 +14,7 @@ class moneyRequest
     public $amount;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $currency;
     /**

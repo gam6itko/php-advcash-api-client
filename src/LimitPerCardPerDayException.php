@@ -9,7 +9,7 @@ class LimitPerCardPerDayException
 {
     /**
      * @access public
-     * @var tnsexceptionType
+     * @var sexceptionType
      */
     public $type;
 }

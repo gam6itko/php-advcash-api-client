@@ -24,12 +24,12 @@ class AdvcashCardMaxAllowedBalanceExceededException
     public $allowedAmount;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $currency;
     /**
      * @access public
-     * @var tnsexceptionType
+     * @var sexceptionType
      */
     public $type;
 }

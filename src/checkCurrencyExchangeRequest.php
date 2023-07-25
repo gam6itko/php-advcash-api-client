@@ -9,7 +9,7 @@ class checkCurrencyExchangeRequest
 {
     /**
      * @access public
-     * @var tnscurrencyExchangeAction
+     * @var currencyExchangeAction
      */
     public $action;
     /**

@@ -6,6 +6,9 @@
         "php": ">=7.1",
         "ext-soap": "*"
     },
+    "require-dev": {
+        "vimeo/psalm": "^5.13"
+    },
     "autoload": {
         "psr-4": {
             "Gam6itko\\AdvCash\\": "src"
@@ -15,5 +18,8 @@
         "branch-alias": {
             "dev-main": "0.1-dev"
         }
+    },
+    "scripts": {
+        "psalm": "psalm --no-cache"
     }
 }

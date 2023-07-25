@@ -14,205 +14,205 @@ class MerchantWebService extends \SoapClient
      * @var array
      */
     private static $classmap = array(
-    'validationSendMoneyToAdvcashCard' => 'Gam6itko\AdvCash\validationSendMoneyToAdvcashCard',
-    'authDTO' => 'Gam6itko\AdvCash\authDTO',
-    'advcashCardTransferRequest' => 'Gam6itko\AdvCash\advcashCardTransferRequest',
-    'moneyRequest' => 'Gam6itko\AdvCash\moneyRequest',
-    'validationSendMoneyToAdvcashCardResponse' => 'Gam6itko\AdvCash\validationSendMoneyToAdvcashCardResponse',
-    'sendMoneyToEcoinEU' => 'Gam6itko\AdvCash\sendMoneyToEcoinEU',
-    'withdrawToEcurrencyRequest' => 'Gam6itko\AdvCash\withdrawToEcurrencyRequest',
-    'sendMoneyToEcoinEUResponse' => 'Gam6itko\AdvCash\sendMoneyToEcoinEUResponse',
-    'sendMoneyToEcoinEUResultHolder' => 'Gam6itko\AdvCash\sendMoneyToEcoinEUResultHolder',
-    'sendMoneyToMarketResultHolder' => 'Gam6itko\AdvCash\sendMoneyToMarketResultHolder',
-    'validationCurrencyExchange' => 'Gam6itko\AdvCash\validationCurrencyExchange',
-    'currencyExchangeRequest' => 'Gam6itko\AdvCash\currencyExchangeRequest',
-    'validationCurrencyExchangeResponse' => 'Gam6itko\AdvCash\validationCurrencyExchangeResponse',
-    'history' => 'Gam6itko\AdvCash\history',
-    'MerchantAPITransactionFilter' => 'Gam6itko\AdvCash\MerchantAPITransactionFilter',
-    'historyResponse' => 'Gam6itko\AdvCash\historyResponse',
-    'outcomingTransactionDTO' => 'Gam6itko\AdvCash\outcomingTransactionDTO',
-    'abstractBaseDTO' => 'Gam6itko\AdvCash\abstractBaseDTO',
-    'validateAccount' => 'Gam6itko\AdvCash\validateAccount',
-    'validateAccountRequestDTO' => 'Gam6itko\AdvCash\validateAccountRequestDTO',
-    'validateAccountResponse' => 'Gam6itko\AdvCash\validateAccountResponse',
-    'validateAccountResultDTO' => 'Gam6itko\AdvCash\validateAccountResultDTO',
-    'validateAccounts' => 'Gam6itko\AdvCash\validateAccounts',
-    'validateAccountsResponse' => 'Gam6itko\AdvCash\validateAccountsResponse',
-    'accountPresentDTO' => 'Gam6itko\AdvCash\accountPresentDTO',
-    'validateCurrencyExchange' => 'Gam6itko\AdvCash\validateCurrencyExchange',
-    'transferRequestDTO' => 'Gam6itko\AdvCash\transferRequestDTO',
-    'validateCurrencyExchangeResponse' => 'Gam6itko\AdvCash\validateCurrencyExchangeResponse',
-    'sendMoneyToExmo' => 'Gam6itko\AdvCash\sendMoneyToExmo',
-    'sendMoneyToExmoResponse' => 'Gam6itko\AdvCash\sendMoneyToExmoResponse',
-    'sendMoneyToExmoResultHolder' => 'Gam6itko\AdvCash\sendMoneyToExmoResultHolder',
-    'register' => 'Gam6itko\AdvCash\register',
-    'registrationRequest' => 'Gam6itko\AdvCash\registrationRequest',
-    'registerResponse' => 'Gam6itko\AdvCash\registerResponse',
-    'validationSendMoneyToWex' => 'Gam6itko\AdvCash\validationSendMoneyToWex',
-    'validationSendMoneyToWexResponse' => 'Gam6itko\AdvCash\validationSendMoneyToWexResponse',
-    'findTransaction' => 'Gam6itko\AdvCash\findTransaction',
-    'findTransactionResponse' => 'Gam6itko\AdvCash\findTransactionResponse',
-    'confirmCryptoCurrencyWithdrawalInvoice' => 'Gam6itko\AdvCash\confirmCryptoCurrencyWithdrawalInvoice',
-    'confirmCryptoCurrencyWithdrawalInvoiceRequest' => 'Gam6itko\AdvCash\confirmCryptoCurrencyWithdrawalInvoiceRequest',
-    'confirmCryptoCurrencyWithdrawalInvoiceResponse' => 'Gam6itko\AdvCash\confirmCryptoCurrencyWithdrawalInvoiceResponse',
-    'findCryptoCurrencyWithdrawalInvoiceByOrderId' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceByOrderId',
-    'findCryptoCurrencyWithdrawalInvoiceByOrderIdResponse' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceByOrderIdResponse',
-    'cryptoCurrencyWithdrawalInvoiceDTO' => 'Gam6itko\AdvCash\cryptoCurrencyWithdrawalInvoiceDTO',
-    'makeCurrencyExchange' => 'Gam6itko\AdvCash\makeCurrencyExchange',
-    'makeCurrencyExchangeResponse' => 'Gam6itko\AdvCash\makeCurrencyExchangeResponse',
-    'sendMoneyToEmail' => 'Gam6itko\AdvCash\sendMoneyToEmail',
-    'sendMoneyRequest' => 'Gam6itko\AdvCash\sendMoneyRequest',
-    'sendMoneyToEmailResponse' => 'Gam6itko\AdvCash\sendMoneyToEmailResponse',
-    'validationSendMoneyToBankCard' => 'Gam6itko\AdvCash\validationSendMoneyToBankCard',
-    'bankCardTransferRequest' => 'Gam6itko\AdvCash\bankCardTransferRequest',
-    'validationSendMoneyToBankCardResponse' => 'Gam6itko\AdvCash\validationSendMoneyToBankCardResponse',
-    'sendMoneyToAdvcashCard' => 'Gam6itko\AdvCash\sendMoneyToAdvcashCard',
-    'sendMoneyToAdvcashCardResponse' => 'Gam6itko\AdvCash\sendMoneyToAdvcashCardResponse',
-    'transferBankCard' => 'Gam6itko\AdvCash\transferBankCard',
-    'bankCardTransferRequestDTO' => 'Gam6itko\AdvCash\bankCardTransferRequestDTO',
-    'transferBankCardResponse' => 'Gam6itko\AdvCash\transferBankCardResponse',
-    'currencyExchange' => 'Gam6itko\AdvCash\currencyExchange',
-    'currencyExchangeResponse' => 'Gam6itko\AdvCash\currencyExchangeResponse',
-    'sendMoney' => 'Gam6itko\AdvCash\sendMoney',
-    'sendMoneyResponse' => 'Gam6itko\AdvCash\sendMoneyResponse',
-    'validationSendMoneyToEcurrency' => 'Gam6itko\AdvCash\validationSendMoneyToEcurrency',
-    'validationSendMoneyToEcurrencyResponse' => 'Gam6itko\AdvCash\validationSendMoneyToEcurrencyResponse',
-    'sendMoneyToEcurrency' => 'Gam6itko\AdvCash\sendMoneyToEcurrency',
-    'sendMoneyToEcurrencyResponse' => 'Gam6itko\AdvCash\sendMoneyToEcurrencyResponse',
-    'transferAdvcashCard' => 'Gam6itko\AdvCash\transferAdvcashCard',
-    'advcashCardTransferRequestDTO' => 'Gam6itko\AdvCash\advcashCardTransferRequestDTO',
-    'transferAdvcashCardResponse' => 'Gam6itko\AdvCash\transferAdvcashCardResponse',
-    'createCryptoCurrencyWithdrawalInvoice' => 'Gam6itko\AdvCash\createCryptoCurrencyWithdrawalInvoice',
-    'createCryptoCurrencyWithdrawalInvoiceResponse' => 'Gam6itko\AdvCash\createCryptoCurrencyWithdrawalInvoiceResponse',
-    'validateBankCardTransfer' => 'Gam6itko\AdvCash\validateBankCardTransfer',
-    'validateBankCardTransferResponse' => 'Gam6itko\AdvCash\validateBankCardTransferResponse',
-    'emailTransfer' => 'Gam6itko\AdvCash\emailTransfer',
-    'emailTransferRequestDTO' => 'Gam6itko\AdvCash\emailTransferRequestDTO',
-    'emailTransferResponse' => 'Gam6itko\AdvCash\emailTransferResponse',
-    'makeTransfer' => 'Gam6itko\AdvCash\makeTransfer',
-    'makeTransferResponse' => 'Gam6itko\AdvCash\makeTransferResponse',
-    'validationSendMoneyToEmail' => 'Gam6itko\AdvCash\validationSendMoneyToEmail',
-    'validationSendMoneyToEmailResponse' => 'Gam6itko\AdvCash\validationSendMoneyToEmailResponse',
-    'withdrawalThroughExternalPaymentSystem' => 'Gam6itko\AdvCash\withdrawalThroughExternalPaymentSystem',
-    'withdrawalThroughExternalPaymentSystemRequestDTO' => 'Gam6itko\AdvCash\withdrawalThroughExternalPaymentSystemRequestDTO',
-    'withdrawalThroughExternalPaymentSystemResponse' => 'Gam6itko\AdvCash\withdrawalThroughExternalPaymentSystemResponse',
-    'sendMoneyToBankCard' => 'Gam6itko\AdvCash\sendMoneyToBankCard',
-    'sendMoneyToBankCardResponse' => 'Gam6itko\AdvCash\sendMoneyToBankCardResponse',
-    'validationSendMoneyToEcoinEU' => 'Gam6itko\AdvCash\validationSendMoneyToEcoinEU',
-    'validationSendMoneyToEcoinEUResponse' => 'Gam6itko\AdvCash\validationSendMoneyToEcoinEUResponse',
-    'validationSendMoneyToExmo' => 'Gam6itko\AdvCash\validationSendMoneyToExmo',
-    'validationSendMoneyToExmoResponse' => 'Gam6itko\AdvCash\validationSendMoneyToExmoResponse',
-    'validateAdvcashCardTransfer' => 'Gam6itko\AdvCash\validateAdvcashCardTransfer',
-    'validateAdvcashCardTransferResponse' => 'Gam6itko\AdvCash\validateAdvcashCardTransferResponse',
-    'findPaymentByOrderId' => 'Gam6itko\AdvCash\findPaymentByOrderId',
-    'paymentOrderRequest' => 'Gam6itko\AdvCash\paymentOrderRequest',
-    'findPaymentByOrderIdResponse' => 'Gam6itko\AdvCash\findPaymentByOrderIdResponse',
-    'paymentOrderResult' => 'Gam6itko\AdvCash\paymentOrderResult',
-    'findCryptoCurrencyWithdrawalInvoiceById' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceById',
-    'findCryptoCurrencyWithdrawalInvoiceByIdResponse' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceByIdResponse',
-    'validateWithdrawalThroughExternalPaymentSystem' => 'Gam6itko\AdvCash\validateWithdrawalThroughExternalPaymentSystem',
-    'validateWithdrawalThroughExternalPaymentSystemResponse' => 'Gam6itko\AdvCash\validateWithdrawalThroughExternalPaymentSystemResponse',
-    'cancelProtectedTransfer' => 'Gam6itko\AdvCash\cancelProtectedTransfer',
-    'cancelProtectedTransferResponse' => 'Gam6itko\AdvCash\cancelProtectedTransferResponse',
-    'cancelProtectedTransferResultHolder' => 'Gam6itko\AdvCash\cancelProtectedTransferResultHolder',
-    'createApi' => 'Gam6itko\AdvCash\createApi',
-    'createApiRequest' => 'Gam6itko\AdvCash\createApiRequest',
-    'createApiResponse' => 'Gam6itko\AdvCash\createApiResponse',
-    'createCryptoCurrencyInvoice' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoice',
-    'createCryptoCurrencyInvoiceRequest' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoiceRequest',
-    'createCryptoCurrencyInvoiceResponse' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoiceResponse',
-    'createCryptoCurrencyInvoiceResult' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoiceResult',
-    'validateEmailTransfer' => 'Gam6itko\AdvCash\validateEmailTransfer',
-    'validateEmailTransferResponse' => 'Gam6itko\AdvCash\validateEmailTransferResponse',
-    'validateTransfer' => 'Gam6itko\AdvCash\validateTransfer',
-    'validateTransferResponse' => 'Gam6itko\AdvCash\validateTransferResponse',
-    'validationSendMoney' => 'Gam6itko\AdvCash\validationSendMoney',
-    'validationSendMoneyResponse' => 'Gam6itko\AdvCash\validationSendMoneyResponse',
-    'createBitcoinInvoice' => 'Gam6itko\AdvCash\createBitcoinInvoice',
-    'createBitcoinInvoiceRequest' => 'Gam6itko\AdvCash\createBitcoinInvoiceRequest',
-    'createBitcoinInvoiceResponse' => 'Gam6itko\AdvCash\createBitcoinInvoiceResponse',
-    'createBitcoinInvoiceResult' => 'Gam6itko\AdvCash\createBitcoinInvoiceResult',
-    'checkCurrencyExchange' => 'Gam6itko\AdvCash\checkCurrencyExchange',
-    'checkCurrencyExchangeRequest' => 'Gam6itko\AdvCash\checkCurrencyExchangeRequest',
-    'checkCurrencyExchangeResponse' => 'Gam6itko\AdvCash\checkCurrencyExchangeResponse',
-    'checkCurrencyExchangeResultHolder' => 'Gam6itko\AdvCash\checkCurrencyExchangeResultHolder',
-    'getBalances' => 'Gam6itko\AdvCash\getBalances',
-    'getBalancesResponse' => 'Gam6itko\AdvCash\getBalancesResponse',
-    'walletBalanceDTO' => 'Gam6itko\AdvCash\walletBalanceDTO',
-    'sendMoneyToWex' => 'Gam6itko\AdvCash\sendMoneyToWex',
-    'sendMoneyToWexResponse' => 'Gam6itko\AdvCash\sendMoneyToWexResponse',
-    'sendMoneyToWexResultHolder' => 'Gam6itko\AdvCash\sendMoneyToWexResultHolder',
-    'cardType' => 'Gam6itko\AdvCash\cardType',
-    'currency' => 'Gam6itko\AdvCash\currency',
-    'exceptionType' => 'Gam6itko\AdvCash\exceptionType',
-    'coinName' => 'Gam6itko\AdvCash\coinName',
-    'depositPaymentMethodType' => 'Gam6itko\AdvCash\depositPaymentMethodType',
-    'dateIntervals' => 'Gam6itko\AdvCash\dateIntervals',
-    'ecurrency' => 'Gam6itko\AdvCash\ecurrency',
-    'currencyExchangeAction' => 'Gam6itko\AdvCash\currencyExchangeAction',
-    'sortOrder' => 'Gam6itko\AdvCash\sortOrder',
-    'transactionDirection' => 'Gam6itko\AdvCash\transactionDirection',
-    'transactionName' => 'Gam6itko\AdvCash\transactionName',
-    'transactionStatus' => 'Gam6itko\AdvCash\transactionStatus',
-    'verificationStatus' => 'Gam6itko\AdvCash\verificationStatus',
-    'supportedLanguage' => 'Gam6itko\AdvCash\supportedLanguage',
-    'sciAllowedPaymentSystems' => 'Gam6itko\AdvCash\sciAllowedPaymentSystems',
-    'cryptoCurrencyWithdrawalInvoiceStatus' => 'Gam6itko\AdvCash\cryptoCurrencyWithdrawalInvoiceStatus',
-    'typeOfTransaction' => 'Gam6itko\AdvCash\typeOfTransaction',
-    'externalSystemWithdrawalType' => 'Gam6itko\AdvCash\externalSystemWithdrawalType',
-    'cryptoCurrencyDepositPaymentStatus' => 'Gam6itko\AdvCash\cryptoCurrencyDepositPaymentStatus',
-    'paymentRequestStatus' => 'Gam6itko\AdvCash\paymentRequestStatus',
-    'operationResult' => 'Gam6itko\AdvCash\operationResult',
-    'tetherTransportProtocol' => 'Gam6itko\AdvCash\tetherTransportProtocol',
-    'InternalException' => 'Gam6itko\AdvCash\InternalException',
-    'BadParametersException' => 'Gam6itko\AdvCash\BadParametersException',
-    'CardIsNotActiveException' => 'Gam6itko\AdvCash\CardIsNotActiveException',
-    'LimitPerTransactionException' => 'Gam6itko\AdvCash\LimitPerTransactionException',
-    'LimitPerMonthException' => 'Gam6itko\AdvCash\LimitPerMonthException',
-    'WrongParamsException' => 'Gam6itko\AdvCash\WrongParamsException',
-    'WrongIpException' => 'Gam6itko\AdvCash\WrongIpException',
-    'UserBlockedException' => 'Gam6itko\AdvCash\UserBlockedException',
-    'MerchantDisabledException' => 'Gam6itko\AdvCash\MerchantDisabledException',
-    'CountLimitException' => 'Gam6itko\AdvCash\CountLimitException',
-    'AdvcashCardMaxAllowedBalanceExceededException' => 'Gam6itko\AdvCash\AdvcashCardMaxAllowedBalanceExceededException',
-    'AccessDeniedException' => 'Gam6itko\AdvCash\AccessDeniedException',
-    'TransactionIsNotAvailableException' => 'Gam6itko\AdvCash\TransactionIsNotAvailableException',
-    'LimitPerDayException' => 'Gam6itko\AdvCash\LimitPerDayException',
-    'DatabaseException' => 'Gam6itko\AdvCash\DatabaseException',
-    'CardDoesNotExistException' => 'Gam6itko\AdvCash\CardDoesNotExistException',
-    'LifetimeLimitException' => 'Gam6itko\AdvCash\LifetimeLimitException',
-    'WalletDoesNotExist' => 'Gam6itko\AdvCash\WalletDoesNotExist',
-    'NotAuthException' => 'Gam6itko\AdvCash\NotAuthException',
-    'NotEnoughMoneyException' => 'Gam6itko\AdvCash\NotEnoughMoneyException',
-    'TransactionFailureException' => 'Gam6itko\AdvCash\TransactionFailureException',
-    'LimitPerCardPerDayException' => 'Gam6itko\AdvCash\LimitPerCardPerDayException',
-    'TransactionTemporaryNotAvailableException' => 'Gam6itko\AdvCash\TransactionTemporaryNotAvailableException',
-    'ApiException' => 'Gam6itko\AdvCash\ApiException',
-    'ExchangeCurrencyException' => 'Gam6itko\AdvCash\ExchangeCurrencyException',
-    'NotEnoughMoneyApiException' => 'Gam6itko\AdvCash\NotEnoughMoneyApiException',
-    'CallRestrictionException' => 'Gam6itko\AdvCash\CallRestrictionException',
-    'LimitsException' => 'Gam6itko\AdvCash\LimitsException',
-    'UserDoesNotExistException' => 'Gam6itko\AdvCash\UserDoesNotExistException',
-    'EmailAlreadyExistException' => 'Gam6itko\AdvCash\EmailAlreadyExistException',
-    'RegistrationException' => 'Gam6itko\AdvCash\RegistrationException',
-    'JAXBException' => 'Gam6itko\AdvCash\JAXBException',
-    'WrongEmailException' => 'Gam6itko\AdvCash\WrongEmailException',
-    'AdditionalDataRequiredException' => 'Gam6itko\AdvCash\AdditionalDataRequiredException',
-    'CardNumberIsNotValidException' => 'Gam6itko\AdvCash\CardNumberIsNotValidException',
-    'NotSupportedBankBinException' => 'Gam6itko\AdvCash\NotSupportedBankBinException',
-    'NotSupportedCountryException' => 'Gam6itko\AdvCash\NotSupportedCountryException',
-    'WalletCurrencyIncorrectException' => 'Gam6itko\AdvCash\WalletCurrencyIncorrectException',
-    'CodeIsNotValidException' => 'Gam6itko\AdvCash\CodeIsNotValidException',
-    'DuplicateOrderIdException' => 'Gam6itko\AdvCash\DuplicateOrderIdException',
-    'NotAvailableDepositSystemException' => 'Gam6itko\AdvCash\NotAvailableDepositSystemException',
-);
+        'validationSendMoneyToAdvcashCard' => 'Gam6itko\AdvCash\validationSendMoneyToAdvcashCard',
+        'authDTO' => 'Gam6itko\AdvCash\authDTO',
+        'advcashCardTransferRequest' => 'Gam6itko\AdvCash\advcashCardTransferRequest',
+        'moneyRequest' => 'Gam6itko\AdvCash\moneyRequest',
+        'validationSendMoneyToAdvcashCardResponse' => 'Gam6itko\AdvCash\validationSendMoneyToAdvcashCardResponse',
+        'sendMoneyToEcoinEU' => 'Gam6itko\AdvCash\sendMoneyToEcoinEU',
+        'withdrawToEcurrencyRequest' => 'Gam6itko\AdvCash\withdrawToEcurrencyRequest',
+        'sendMoneyToEcoinEUResponse' => 'Gam6itko\AdvCash\sendMoneyToEcoinEUResponse',
+        'sendMoneyToEcoinEUResultHolder' => 'Gam6itko\AdvCash\sendMoneyToEcoinEUResultHolder',
+        'sendMoneyToMarketResultHolder' => 'Gam6itko\AdvCash\sendMoneyToMarketResultHolder',
+        'validationCurrencyExchange' => 'Gam6itko\AdvCash\validationCurrencyExchange',
+        'currencyExchangeRequest' => 'Gam6itko\AdvCash\currencyExchangeRequest',
+        'validationCurrencyExchangeResponse' => 'Gam6itko\AdvCash\validationCurrencyExchangeResponse',
+        'history' => 'Gam6itko\AdvCash\history',
+        'MerchantAPITransactionFilter' => 'Gam6itko\AdvCash\MerchantAPITransactionFilter',
+        'historyResponse' => 'Gam6itko\AdvCash\historyResponse',
+        'outcomingTransactionDTO' => 'Gam6itko\AdvCash\outcomingTransactionDTO',
+        'abstractBaseDTO' => 'Gam6itko\AdvCash\abstractBaseDTO',
+        'validateAccount' => 'Gam6itko\AdvCash\validateAccount',
+        'validateAccountRequestDTO' => 'Gam6itko\AdvCash\validateAccountRequestDTO',
+        'validateAccountResponse' => 'Gam6itko\AdvCash\validateAccountResponse',
+        'validateAccountResultDTO' => 'Gam6itko\AdvCash\validateAccountResultDTO',
+        'validateAccounts' => 'Gam6itko\AdvCash\validateAccounts',
+        'validateAccountsResponse' => 'Gam6itko\AdvCash\validateAccountsResponse',
+        'accountPresentDTO' => 'Gam6itko\AdvCash\accountPresentDTO',
+        'validateCurrencyExchange' => 'Gam6itko\AdvCash\validateCurrencyExchange',
+        'transferRequestDTO' => 'Gam6itko\AdvCash\transferRequestDTO',
+        'validateCurrencyExchangeResponse' => 'Gam6itko\AdvCash\validateCurrencyExchangeResponse',
+        'sendMoneyToExmo' => 'Gam6itko\AdvCash\sendMoneyToExmo',
+        'sendMoneyToExmoResponse' => 'Gam6itko\AdvCash\sendMoneyToExmoResponse',
+        'sendMoneyToExmoResultHolder' => 'Gam6itko\AdvCash\sendMoneyToExmoResultHolder',
+        'register' => 'Gam6itko\AdvCash\register',
+        'registrationRequest' => 'Gam6itko\AdvCash\registrationRequest',
+        'registerResponse' => 'Gam6itko\AdvCash\registerResponse',
+        'validationSendMoneyToWex' => 'Gam6itko\AdvCash\validationSendMoneyToWex',
+        'validationSendMoneyToWexResponse' => 'Gam6itko\AdvCash\validationSendMoneyToWexResponse',
+        'findTransaction' => 'Gam6itko\AdvCash\findTransaction',
+        'findTransactionResponse' => 'Gam6itko\AdvCash\findTransactionResponse',
+        'confirmCryptoCurrencyWithdrawalInvoice' => 'Gam6itko\AdvCash\confirmCryptoCurrencyWithdrawalInvoice',
+        'confirmCryptoCurrencyWithdrawalInvoiceRequest' => 'Gam6itko\AdvCash\confirmCryptoCurrencyWithdrawalInvoiceRequest',
+        'confirmCryptoCurrencyWithdrawalInvoiceResponse' => 'Gam6itko\AdvCash\confirmCryptoCurrencyWithdrawalInvoiceResponse',
+        'findCryptoCurrencyWithdrawalInvoiceByOrderId' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceByOrderId',
+        'findCryptoCurrencyWithdrawalInvoiceByOrderIdResponse' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceByOrderIdResponse',
+        'cryptoCurrencyWithdrawalInvoiceDTO' => 'Gam6itko\AdvCash\cryptoCurrencyWithdrawalInvoiceDTO',
+        'makeCurrencyExchange' => 'Gam6itko\AdvCash\makeCurrencyExchange',
+        'makeCurrencyExchangeResponse' => 'Gam6itko\AdvCash\makeCurrencyExchangeResponse',
+        'sendMoneyToEmail' => 'Gam6itko\AdvCash\sendMoneyToEmail',
+        'sendMoneyRequest' => 'Gam6itko\AdvCash\sendMoneyRequest',
+        'sendMoneyToEmailResponse' => 'Gam6itko\AdvCash\sendMoneyToEmailResponse',
+        'validationSendMoneyToBankCard' => 'Gam6itko\AdvCash\validationSendMoneyToBankCard',
+        'bankCardTransferRequest' => 'Gam6itko\AdvCash\bankCardTransferRequest',
+        'validationSendMoneyToBankCardResponse' => 'Gam6itko\AdvCash\validationSendMoneyToBankCardResponse',
+        'sendMoneyToAdvcashCard' => 'Gam6itko\AdvCash\sendMoneyToAdvcashCard',
+        'sendMoneyToAdvcashCardResponse' => 'Gam6itko\AdvCash\sendMoneyToAdvcashCardResponse',
+        'transferBankCard' => 'Gam6itko\AdvCash\transferBankCard',
+        'bankCardTransferRequestDTO' => 'Gam6itko\AdvCash\bankCardTransferRequestDTO',
+        'transferBankCardResponse' => 'Gam6itko\AdvCash\transferBankCardResponse',
+        'currencyExchange' => 'Gam6itko\AdvCash\currencyExchange',
+        'currencyExchangeResponse' => 'Gam6itko\AdvCash\currencyExchangeResponse',
+        'sendMoney' => 'Gam6itko\AdvCash\sendMoney',
+        'sendMoneyResponse' => 'Gam6itko\AdvCash\sendMoneyResponse',
+        'validationSendMoneyToEcurrency' => 'Gam6itko\AdvCash\validationSendMoneyToEcurrency',
+        'validationSendMoneyToEcurrencyResponse' => 'Gam6itko\AdvCash\validationSendMoneyToEcurrencyResponse',
+        'sendMoneyToEcurrency' => 'Gam6itko\AdvCash\sendMoneyToEcurrency',
+        'sendMoneyToEcurrencyResponse' => 'Gam6itko\AdvCash\sendMoneyToEcurrencyResponse',
+        'transferAdvcashCard' => 'Gam6itko\AdvCash\transferAdvcashCard',
+        'advcashCardTransferRequestDTO' => 'Gam6itko\AdvCash\advcashCardTransferRequestDTO',
+        'transferAdvcashCardResponse' => 'Gam6itko\AdvCash\transferAdvcashCardResponse',
+        'createCryptoCurrencyWithdrawalInvoice' => 'Gam6itko\AdvCash\createCryptoCurrencyWithdrawalInvoice',
+        'createCryptoCurrencyWithdrawalInvoiceResponse' => 'Gam6itko\AdvCash\createCryptoCurrencyWithdrawalInvoiceResponse',
+        'validateBankCardTransfer' => 'Gam6itko\AdvCash\validateBankCardTransfer',
+        'validateBankCardTransferResponse' => 'Gam6itko\AdvCash\validateBankCardTransferResponse',
+        'emailTransfer' => 'Gam6itko\AdvCash\emailTransfer',
+        'emailTransferRequestDTO' => 'Gam6itko\AdvCash\emailTransferRequestDTO',
+        'emailTransferResponse' => 'Gam6itko\AdvCash\emailTransferResponse',
+        'makeTransfer' => 'Gam6itko\AdvCash\makeTransfer',
+        'makeTransferResponse' => 'Gam6itko\AdvCash\makeTransferResponse',
+        'validationSendMoneyToEmail' => 'Gam6itko\AdvCash\validationSendMoneyToEmail',
+        'validationSendMoneyToEmailResponse' => 'Gam6itko\AdvCash\validationSendMoneyToEmailResponse',
+        'withdrawalThroughExternalPaymentSystem' => 'Gam6itko\AdvCash\withdrawalThroughExternalPaymentSystem',
+        'withdrawalThroughExternalPaymentSystemRequestDTO' => 'Gam6itko\AdvCash\withdrawalThroughExternalPaymentSystemRequestDTO',
+        'withdrawalThroughExternalPaymentSystemResponse' => 'Gam6itko\AdvCash\withdrawalThroughExternalPaymentSystemResponse',
+        'sendMoneyToBankCard' => 'Gam6itko\AdvCash\sendMoneyToBankCard',
+        'sendMoneyToBankCardResponse' => 'Gam6itko\AdvCash\sendMoneyToBankCardResponse',
+        'validationSendMoneyToEcoinEU' => 'Gam6itko\AdvCash\validationSendMoneyToEcoinEU',
+        'validationSendMoneyToEcoinEUResponse' => 'Gam6itko\AdvCash\validationSendMoneyToEcoinEUResponse',
+        'validationSendMoneyToExmo' => 'Gam6itko\AdvCash\validationSendMoneyToExmo',
+        'validationSendMoneyToExmoResponse' => 'Gam6itko\AdvCash\validationSendMoneyToExmoResponse',
+        'validateAdvcashCardTransfer' => 'Gam6itko\AdvCash\validateAdvcashCardTransfer',
+        'validateAdvcashCardTransferResponse' => 'Gam6itko\AdvCash\validateAdvcashCardTransferResponse',
+        'findPaymentByOrderId' => 'Gam6itko\AdvCash\findPaymentByOrderId',
+        'paymentOrderRequest' => 'Gam6itko\AdvCash\paymentOrderRequest',
+        'findPaymentByOrderIdResponse' => 'Gam6itko\AdvCash\findPaymentByOrderIdResponse',
+        'paymentOrderResult' => 'Gam6itko\AdvCash\paymentOrderResult',
+        'findCryptoCurrencyWithdrawalInvoiceById' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceById',
+        'findCryptoCurrencyWithdrawalInvoiceByIdResponse' => 'Gam6itko\AdvCash\findCryptoCurrencyWithdrawalInvoiceByIdResponse',
+        'validateWithdrawalThroughExternalPaymentSystem' => 'Gam6itko\AdvCash\validateWithdrawalThroughExternalPaymentSystem',
+        'validateWithdrawalThroughExternalPaymentSystemResponse' => 'Gam6itko\AdvCash\validateWithdrawalThroughExternalPaymentSystemResponse',
+        'cancelProtectedTransfer' => 'Gam6itko\AdvCash\cancelProtectedTransfer',
+        'cancelProtectedTransferResponse' => 'Gam6itko\AdvCash\cancelProtectedTransferResponse',
+        'cancelProtectedTransferResultHolder' => 'Gam6itko\AdvCash\cancelProtectedTransferResultHolder',
+        'createApi' => 'Gam6itko\AdvCash\createApi',
+        'createApiRequest' => 'Gam6itko\AdvCash\createApiRequest',
+        'createApiResponse' => 'Gam6itko\AdvCash\createApiResponse',
+        'createCryptoCurrencyInvoice' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoice',
+        'createCryptoCurrencyInvoiceRequest' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoiceRequest',
+        'createCryptoCurrencyInvoiceResponse' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoiceResponse',
+        'createCryptoCurrencyInvoiceResult' => 'Gam6itko\AdvCash\createCryptoCurrencyInvoiceResult',
+        'validateEmailTransfer' => 'Gam6itko\AdvCash\validateEmailTransfer',
+        'validateEmailTransferResponse' => 'Gam6itko\AdvCash\validateEmailTransferResponse',
+        'validateTransfer' => 'Gam6itko\AdvCash\validateTransfer',
+        'validateTransferResponse' => 'Gam6itko\AdvCash\validateTransferResponse',
+        'validationSendMoney' => 'Gam6itko\AdvCash\validationSendMoney',
+        'validationSendMoneyResponse' => 'Gam6itko\AdvCash\validationSendMoneyResponse',
+        'createBitcoinInvoice' => 'Gam6itko\AdvCash\createBitcoinInvoice',
+        'createBitcoinInvoiceRequest' => 'Gam6itko\AdvCash\createBitcoinInvoiceRequest',
+        'createBitcoinInvoiceResponse' => 'Gam6itko\AdvCash\createBitcoinInvoiceResponse',
+        'createBitcoinInvoiceResult' => 'Gam6itko\AdvCash\createBitcoinInvoiceResult',
+        'checkCurrencyExchange' => 'Gam6itko\AdvCash\checkCurrencyExchange',
+        'checkCurrencyExchangeRequest' => 'Gam6itko\AdvCash\checkCurrencyExchangeRequest',
+        'checkCurrencyExchangeResponse' => 'Gam6itko\AdvCash\checkCurrencyExchangeResponse',
+        'checkCurrencyExchangeResultHolder' => 'Gam6itko\AdvCash\checkCurrencyExchangeResultHolder',
+        'getBalances' => 'Gam6itko\AdvCash\getBalances',
+        'getBalancesResponse' => 'Gam6itko\AdvCash\getBalancesResponse',
+        'walletBalanceDTO' => 'Gam6itko\AdvCash\walletBalanceDTO',
+        'sendMoneyToWex' => 'Gam6itko\AdvCash\sendMoneyToWex',
+        'sendMoneyToWexResponse' => 'Gam6itko\AdvCash\sendMoneyToWexResponse',
+        'sendMoneyToWexResultHolder' => 'Gam6itko\AdvCash\sendMoneyToWexResultHolder',
+        'cardType' => 'Gam6itko\AdvCash\cardType',
+        'currency' => 'Gam6itko\AdvCash\currency',
+        'exceptionType' => 'Gam6itko\AdvCash\exceptionType',
+        'coinName' => 'Gam6itko\AdvCash\coinName',
+        'depositPaymentMethodType' => 'Gam6itko\AdvCash\depositPaymentMethodType',
+        'dateIntervals' => 'Gam6itko\AdvCash\dateIntervals',
+        'ecurrency' => 'Gam6itko\AdvCash\ecurrency',
+        'currencyExchangeAction' => 'Gam6itko\AdvCash\currencyExchangeAction',
+        'sortOrder' => 'Gam6itko\AdvCash\sortOrder',
+        'transactionDirection' => 'Gam6itko\AdvCash\transactionDirection',
+        'transactionName' => 'Gam6itko\AdvCash\transactionName',
+        'transactionStatus' => 'Gam6itko\AdvCash\transactionStatus',
+        'verificationStatus' => 'Gam6itko\AdvCash\verificationStatus',
+        'supportedLanguage' => 'Gam6itko\AdvCash\supportedLanguage',
+        'sciAllowedPaymentSystems' => 'Gam6itko\AdvCash\sciAllowedPaymentSystems',
+        'cryptoCurrencyWithdrawalInvoiceStatus' => 'Gam6itko\AdvCash\cryptoCurrencyWithdrawalInvoiceStatus',
+        'typeOfTransaction' => 'Gam6itko\AdvCash\typeOfTransaction',
+        'externalSystemWithdrawalType' => 'Gam6itko\AdvCash\externalSystemWithdrawalType',
+        'cryptoCurrencyDepositPaymentStatus' => 'Gam6itko\AdvCash\cryptoCurrencyDepositPaymentStatus',
+        'paymentRequestStatus' => 'Gam6itko\AdvCash\paymentRequestStatus',
+        'operationResult' => 'Gam6itko\AdvCash\operationResult',
+        'tetherTransportProtocol' => 'Gam6itko\AdvCash\tetherTransportProtocol',
+        'InternalException' => 'Gam6itko\AdvCash\InternalException',
+        'BadParametersException' => 'Gam6itko\AdvCash\BadParametersException',
+        'CardIsNotActiveException' => 'Gam6itko\AdvCash\CardIsNotActiveException',
+        'LimitPerTransactionException' => 'Gam6itko\AdvCash\LimitPerTransactionException',
+        'LimitPerMonthException' => 'Gam6itko\AdvCash\LimitPerMonthException',
+        'WrongParamsException' => 'Gam6itko\AdvCash\WrongParamsException',
+        'WrongIpException' => 'Gam6itko\AdvCash\WrongIpException',
+        'UserBlockedException' => 'Gam6itko\AdvCash\UserBlockedException',
+        'MerchantDisabledException' => 'Gam6itko\AdvCash\MerchantDisabledException',
+        'CountLimitException' => 'Gam6itko\AdvCash\CountLimitException',
+        'AdvcashCardMaxAllowedBalanceExceededException' => 'Gam6itko\AdvCash\AdvcashCardMaxAllowedBalanceExceededException',
+        'AccessDeniedException' => 'Gam6itko\AdvCash\AccessDeniedException',
+        'TransactionIsNotAvailableException' => 'Gam6itko\AdvCash\TransactionIsNotAvailableException',
+        'LimitPerDayException' => 'Gam6itko\AdvCash\LimitPerDayException',
+        'DatabaseException' => 'Gam6itko\AdvCash\DatabaseException',
+        'CardDoesNotExistException' => 'Gam6itko\AdvCash\CardDoesNotExistException',
+        'LifetimeLimitException' => 'Gam6itko\AdvCash\LifetimeLimitException',
+        'WalletDoesNotExist' => 'Gam6itko\AdvCash\WalletDoesNotExist',
+        'NotAuthException' => 'Gam6itko\AdvCash\NotAuthException',
+        'NotEnoughMoneyException' => 'Gam6itko\AdvCash\NotEnoughMoneyException',
+        'TransactionFailureException' => 'Gam6itko\AdvCash\TransactionFailureException',
+        'LimitPerCardPerDayException' => 'Gam6itko\AdvCash\LimitPerCardPerDayException',
+        'TransactionTemporaryNotAvailableException' => 'Gam6itko\AdvCash\TransactionTemporaryNotAvailableException',
+        'ApiException' => 'Gam6itko\AdvCash\ApiException',
+        'ExchangeCurrencyException' => 'Gam6itko\AdvCash\ExchangeCurrencyException',
+        'NotEnoughMoneyApiException' => 'Gam6itko\AdvCash\NotEnoughMoneyApiException',
+        'CallRestrictionException' => 'Gam6itko\AdvCash\CallRestrictionException',
+        'LimitsException' => 'Gam6itko\AdvCash\LimitsException',
+        'UserDoesNotExistException' => 'Gam6itko\AdvCash\UserDoesNotExistException',
+        'EmailAlreadyExistException' => 'Gam6itko\AdvCash\EmailAlreadyExistException',
+        'RegistrationException' => 'Gam6itko\AdvCash\RegistrationException',
+        'JAXBException' => 'Gam6itko\AdvCash\JAXBException',
+        'WrongEmailException' => 'Gam6itko\AdvCash\WrongEmailException',
+        'AdditionalDataRequiredException' => 'Gam6itko\AdvCash\AdditionalDataRequiredException',
+        'CardNumberIsNotValidException' => 'Gam6itko\AdvCash\CardNumberIsNotValidException',
+        'NotSupportedBankBinException' => 'Gam6itko\AdvCash\NotSupportedBankBinException',
+        'NotSupportedCountryException' => 'Gam6itko\AdvCash\NotSupportedCountryException',
+        'WalletCurrencyIncorrectException' => 'Gam6itko\AdvCash\WalletCurrencyIncorrectException',
+        'CodeIsNotValidException' => 'Gam6itko\AdvCash\CodeIsNotValidException',
+        'DuplicateOrderIdException' => 'Gam6itko\AdvCash\DuplicateOrderIdException',
+        'NotAvailableDepositSystemException' => 'Gam6itko\AdvCash\NotAvailableDepositSystemException',
+    );
 
     /**
      * Constructor using wsdl location and options array
      * @param string $wsdl WSDL location for this service
      * @param array $options Options for the SoapClient
      */
-    public function __construct($wsdl="https://wallet.advcash.com/wsm/merchantWebService?wsdl", $options=array())
+    public function __construct($wsdl = "https://wallet.advcash.com/wsm/merchantWebService?wsdl", $options = array())
     {
         foreach (self::$classmap as $wsdlClassName => $phpClassName) {
             if (!isset($options['classmap'][$wsdlClassName])) {
@@ -239,10 +239,10 @@ class MerchantWebService extends \SoapClient
             if ($type == "object") {
                 $type = get_class($arg);
             }
-            $variables .= "(".$type.")";
+            $variables .= "(" . $type . ")";
         }
         if (!in_array($variables, $validParameters)) {
-            throw new Exception("Invalid parameter types: ".str_replace(")(", ", ", $variables));
+            throw new \Exception("Invalid parameter types: " . str_replace(")(", ", ", $variables));
         }
         return true;
     }
@@ -258,8 +258,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToAdvcashCard($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToAdvcashCard)",
-    );
+            "(validationSendMoneyToAdvcashCard)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToAdvcashCard", $args);
@@ -277,8 +277,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToEcoinEU($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToEcoinEU)",
-    );
+            "(sendMoneyToEcoinEU)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToEcoinEU", $args);
@@ -296,8 +296,8 @@ class MerchantWebService extends \SoapClient
     public function validationCurrencyExchange($mixed = null)
     {
         $validParameters = array(
-        "(validationCurrencyExchange)",
-    );
+            "(validationCurrencyExchange)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationCurrencyExchange", $args);
@@ -315,8 +315,8 @@ class MerchantWebService extends \SoapClient
     public function history($mixed = null)
     {
         $validParameters = array(
-        "(history)",
-    );
+            "(history)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("history", $args);
@@ -334,8 +334,8 @@ class MerchantWebService extends \SoapClient
     public function validateAccount($mixed = null)
     {
         $validParameters = array(
-        "(validateAccount)",
-    );
+            "(validateAccount)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateAccount", $args);
@@ -353,8 +353,8 @@ class MerchantWebService extends \SoapClient
     public function validateAccounts($mixed = null)
     {
         $validParameters = array(
-        "(validateAccounts)",
-    );
+            "(validateAccounts)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateAccounts", $args);
@@ -372,8 +372,8 @@ class MerchantWebService extends \SoapClient
     public function validateCurrencyExchange($mixed = null)
     {
         $validParameters = array(
-        "(validateCurrencyExchange)",
-    );
+            "(validateCurrencyExchange)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateCurrencyExchange", $args);
@@ -391,8 +391,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToExmo($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToExmo)",
-    );
+            "(sendMoneyToExmo)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToExmo", $args);
@@ -410,8 +410,8 @@ class MerchantWebService extends \SoapClient
     public function register($mixed = null)
     {
         $validParameters = array(
-        "(register)",
-    );
+            "(register)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("register", $args);
@@ -429,8 +429,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToWex($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToWex)",
-    );
+            "(validationSendMoneyToWex)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToWex", $args);
@@ -448,8 +448,8 @@ class MerchantWebService extends \SoapClient
     public function findTransaction($mixed = null)
     {
         $validParameters = array(
-        "(findTransaction)",
-    );
+            "(findTransaction)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("findTransaction", $args);
@@ -467,8 +467,8 @@ class MerchantWebService extends \SoapClient
     public function confirmCryptoCurrencyWithdrawalInvoice($mixed = null)
     {
         $validParameters = array(
-        "(confirmCryptoCurrencyWithdrawalInvoice)",
-    );
+            "(confirmCryptoCurrencyWithdrawalInvoice)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("confirmCryptoCurrencyWithdrawalInvoice", $args);
@@ -486,8 +486,8 @@ class MerchantWebService extends \SoapClient
     public function findCryptoCurrencyWithdrawalInvoiceByOrderId($mixed = null)
     {
         $validParameters = array(
-        "(findCryptoCurrencyWithdrawalInvoiceByOrderId)",
-    );
+            "(findCryptoCurrencyWithdrawalInvoiceByOrderId)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("findCryptoCurrencyWithdrawalInvoiceByOrderId", $args);
@@ -505,8 +505,8 @@ class MerchantWebService extends \SoapClient
     public function makeCurrencyExchange($mixed = null)
     {
         $validParameters = array(
-        "(makeCurrencyExchange)",
-    );
+            "(makeCurrencyExchange)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("makeCurrencyExchange", $args);
@@ -524,8 +524,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToEmail($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToEmail)",
-    );
+            "(sendMoneyToEmail)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToEmail", $args);
@@ -543,8 +543,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToBankCard($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToBankCard)",
-    );
+            "(validationSendMoneyToBankCard)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToBankCard", $args);
@@ -562,8 +562,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToAdvcashCard($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToAdvcashCard)",
-    );
+            "(sendMoneyToAdvcashCard)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToAdvcashCard", $args);
@@ -581,8 +581,8 @@ class MerchantWebService extends \SoapClient
     public function transferBankCard($mixed = null)
     {
         $validParameters = array(
-        "(transferBankCard)",
-    );
+            "(transferBankCard)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("transferBankCard", $args);
@@ -600,8 +600,8 @@ class MerchantWebService extends \SoapClient
     public function currencyExchange($mixed = null)
     {
         $validParameters = array(
-        "(currencyExchange)",
-    );
+            "(currencyExchange)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("currencyExchange", $args);
@@ -619,8 +619,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoney($mixed = null)
     {
         $validParameters = array(
-        "(sendMoney)",
-    );
+            "(sendMoney)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoney", $args);
@@ -638,8 +638,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToEcurrency($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToEcurrency)",
-    );
+            "(validationSendMoneyToEcurrency)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToEcurrency", $args);
@@ -657,8 +657,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToEcurrency($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToEcurrency)",
-    );
+            "(sendMoneyToEcurrency)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToEcurrency", $args);
@@ -676,8 +676,8 @@ class MerchantWebService extends \SoapClient
     public function transferAdvcashCard($mixed = null)
     {
         $validParameters = array(
-        "(transferAdvcashCard)",
-    );
+            "(transferAdvcashCard)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("transferAdvcashCard", $args);
@@ -695,8 +695,8 @@ class MerchantWebService extends \SoapClient
     public function createCryptoCurrencyWithdrawalInvoice($mixed = null)
     {
         $validParameters = array(
-        "(createCryptoCurrencyWithdrawalInvoice)",
-    );
+            "(createCryptoCurrencyWithdrawalInvoice)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("createCryptoCurrencyWithdrawalInvoice", $args);
@@ -714,8 +714,8 @@ class MerchantWebService extends \SoapClient
     public function validateBankCardTransfer($mixed = null)
     {
         $validParameters = array(
-        "(validateBankCardTransfer)",
-    );
+            "(validateBankCardTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateBankCardTransfer", $args);
@@ -733,8 +733,8 @@ class MerchantWebService extends \SoapClient
     public function emailTransfer($mixed = null)
     {
         $validParameters = array(
-        "(emailTransfer)",
-    );
+            "(emailTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("emailTransfer", $args);
@@ -752,8 +752,8 @@ class MerchantWebService extends \SoapClient
     public function makeTransfer($mixed = null)
     {
         $validParameters = array(
-        "(makeTransfer)",
-    );
+            "(makeTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("makeTransfer", $args);
@@ -771,8 +771,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToEmail($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToEmail)",
-    );
+            "(validationSendMoneyToEmail)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToEmail", $args);
@@ -790,8 +790,8 @@ class MerchantWebService extends \SoapClient
     public function withdrawalThroughExternalPaymentSystem($mixed = null)
     {
         $validParameters = array(
-        "(withdrawalThroughExternalPaymentSystem)",
-    );
+            "(withdrawalThroughExternalPaymentSystem)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("withdrawalThroughExternalPaymentSystem", $args);
@@ -809,8 +809,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToBankCard($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToBankCard)",
-    );
+            "(sendMoneyToBankCard)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToBankCard", $args);
@@ -828,8 +828,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToEcoinEU($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToEcoinEU)",
-    );
+            "(validationSendMoneyToEcoinEU)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToEcoinEU", $args);
@@ -847,8 +847,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoneyToExmo($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoneyToExmo)",
-    );
+            "(validationSendMoneyToExmo)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoneyToExmo", $args);
@@ -866,8 +866,8 @@ class MerchantWebService extends \SoapClient
     public function validateAdvcashCardTransfer($mixed = null)
     {
         $validParameters = array(
-        "(validateAdvcashCardTransfer)",
-    );
+            "(validateAdvcashCardTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateAdvcashCardTransfer", $args);
@@ -885,8 +885,8 @@ class MerchantWebService extends \SoapClient
     public function findPaymentByOrderId($mixed = null)
     {
         $validParameters = array(
-        "(findPaymentByOrderId)",
-    );
+            "(findPaymentByOrderId)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("findPaymentByOrderId", $args);
@@ -904,8 +904,8 @@ class MerchantWebService extends \SoapClient
     public function findCryptoCurrencyWithdrawalInvoiceById($mixed = null)
     {
         $validParameters = array(
-        "(findCryptoCurrencyWithdrawalInvoiceById)",
-    );
+            "(findCryptoCurrencyWithdrawalInvoiceById)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("findCryptoCurrencyWithdrawalInvoiceById", $args);
@@ -923,8 +923,8 @@ class MerchantWebService extends \SoapClient
     public function validateWithdrawalThroughExternalPaymentSystem($mixed = null)
     {
         $validParameters = array(
-        "(validateWithdrawalThroughExternalPaymentSystem)",
-    );
+            "(validateWithdrawalThroughExternalPaymentSystem)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateWithdrawalThroughExternalPaymentSystem", $args);
@@ -942,8 +942,8 @@ class MerchantWebService extends \SoapClient
     public function cancelProtectedTransfer($mixed = null)
     {
         $validParameters = array(
-        "(cancelProtectedTransfer)",
-    );
+            "(cancelProtectedTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("cancelProtectedTransfer", $args);
@@ -961,8 +961,8 @@ class MerchantWebService extends \SoapClient
     public function createApi($mixed = null)
     {
         $validParameters = array(
-        "(createApi)",
-    );
+            "(createApi)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("createApi", $args);
@@ -980,8 +980,8 @@ class MerchantWebService extends \SoapClient
     public function createCryptoCurrencyInvoice($mixed = null)
     {
         $validParameters = array(
-        "(createCryptoCurrencyInvoice)",
-    );
+            "(createCryptoCurrencyInvoice)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("createCryptoCurrencyInvoice", $args);
@@ -999,8 +999,8 @@ class MerchantWebService extends \SoapClient
     public function validateEmailTransfer($mixed = null)
     {
         $validParameters = array(
-        "(validateEmailTransfer)",
-    );
+            "(validateEmailTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateEmailTransfer", $args);
@@ -1018,8 +1018,8 @@ class MerchantWebService extends \SoapClient
     public function validateTransfer($mixed = null)
     {
         $validParameters = array(
-        "(validateTransfer)",
-    );
+            "(validateTransfer)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validateTransfer", $args);
@@ -1037,8 +1037,8 @@ class MerchantWebService extends \SoapClient
     public function validationSendMoney($mixed = null)
     {
         $validParameters = array(
-        "(validationSendMoney)",
-    );
+            "(validationSendMoney)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("validationSendMoney", $args);
@@ -1056,8 +1056,8 @@ class MerchantWebService extends \SoapClient
     public function createBitcoinInvoice($mixed = null)
     {
         $validParameters = array(
-        "(createBitcoinInvoice)",
-    );
+            "(createBitcoinInvoice)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("createBitcoinInvoice", $args);
@@ -1075,8 +1075,8 @@ class MerchantWebService extends \SoapClient
     public function checkCurrencyExchange($mixed = null)
     {
         $validParameters = array(
-        "(checkCurrencyExchange)",
-    );
+            "(checkCurrencyExchange)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("checkCurrencyExchange", $args);
@@ -1094,8 +1094,8 @@ class MerchantWebService extends \SoapClient
     public function getBalances($mixed = null)
     {
         $validParameters = array(
-        "(getBalances)",
-    );
+            "(getBalances)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("getBalances", $args);
@@ -1113,8 +1113,8 @@ class MerchantWebService extends \SoapClient
     public function sendMoneyToWex($mixed = null)
     {
         $validParameters = array(
-        "(sendMoneyToWex)",
-    );
+            "(sendMoneyToWex)",
+        );
         $args = func_get_args();
         $this->_checkArguments($args, $validParameters);
         return $this->__soapCall("sendMoneyToWex", $args);

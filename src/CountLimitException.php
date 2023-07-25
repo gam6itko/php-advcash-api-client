@@ -14,12 +14,12 @@ class CountLimitException
     public $limitCount;
     /**
      * @access public
-     * @var tnsdateIntervals
+     * @var sdateIntervals
      */
     public $dateInterval;
     /**
      * @access public
-     * @var tnsexceptionType
+     * @var sexceptionType
      */
     public $type;
 }

@@ -9,7 +9,7 @@ class cryptoCurrencyWithdrawalInvoiceDTO
 {
     /**
      * @access public
-     * @var tnscoinName
+     * @var scoinName
      */
     public $coinName;
     /**
@@ -24,7 +24,7 @@ class cryptoCurrencyWithdrawalInvoiceDTO
     public $cryptoCurrencyAmount;
     /**
      * @access public
-     * @var tnssciAllowedPaymentSystems
+     * @var ssciAllowedPaymentSystems
      */
     public $depositMethod;
     /**
@@ -39,7 +39,7 @@ class cryptoCurrencyWithdrawalInvoiceDTO
     public $fiatAmount;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $fiatCurrency;
     /**
@@ -59,7 +59,7 @@ class cryptoCurrencyWithdrawalInvoiceDTO
     public $receiver;
     /**
      * @access public
-     * @var tnscryptoCurrencyWithdrawalInvoiceStatus
+     * @var scryptoCurrencyWithdrawalInvoiceStatus
      */
     public $status;
     /**

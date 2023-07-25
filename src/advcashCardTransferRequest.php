@@ -9,7 +9,7 @@ class advcashCardTransferRequest extends moneyRequest
 {
     /**
      * @access public
-     * @var tnscardType
+     * @var scardType
      */
     public $cardType;
     /**

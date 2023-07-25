@@ -9,7 +9,7 @@ class WalletCurrencyIncorrectException
 {
     /**
      * @access public
-     * @var tnsexceptionType
+     * @var sexceptionType
      */
     public $type;
 }

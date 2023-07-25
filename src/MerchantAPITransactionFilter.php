@@ -19,7 +19,7 @@ class MerchantAPITransactionFilter
     public $from;
     /**
      * @access public
-     * @var tnssortOrder
+     * @var ssortOrder
      */
     public $sortOrder;
     /**
@@ -34,17 +34,17 @@ class MerchantAPITransactionFilter
     public $startTimeTo;
     /**
      * @access public
-     * @var tnstransactionDirection
+     * @var stransactionDirection
      */
     public $transactionDirection;
     /**
      * @access public
-     * @var tnstransactionName
+     * @var stransactionName
      */
     public $transactionName;
     /**
      * @access public
-     * @var tnstransactionStatus
+     * @var stransactionStatus
      */
     public $transactionStatus;
     /**

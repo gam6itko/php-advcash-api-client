@@ -19,12 +19,12 @@ class withdrawalThroughExternalPaymentSystemRequestDTO
     public $comment;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $currency;
     /**
      * @access public
-     * @var tnsexternalSystemWithdrawalType
+     * @var externalSystemWithdrawalType
      */
     public $externalPaymentSystem;
     /**

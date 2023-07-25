@@ -14,7 +14,7 @@ class paymentOrderResult extends paymentOrderRequest
     public $buyerEmail;
     /**
      * @access public
-     * @var tnscoinName
+     * @var coinName
      */
     public $coinName;
     /**
@@ -34,7 +34,7 @@ class paymentOrderResult extends paymentOrderRequest
     public $cryptoCurrencyInvoiceCreated;
     /**
      * @access public
-     * @var tnscryptoCurrencyDepositPaymentStatus
+     * @var cryptoCurrencyDepositPaymentStatus
      */
     public $cryptoCurrencyInvoiceStatus;
     /**
@@ -69,12 +69,12 @@ class paymentOrderResult extends paymentOrderRequest
     public $paymentCreated;
     /**
      * @access public
-     * @var tnssciAllowedPaymentSystems
+     * @var sciAllowedPaymentSystems
      */
     public $paymentMethod;
     /**
      * @access public
-     * @var tnspaymentRequestStatus
+     * @var paymentRequestStatus
      */
     public $paymentStatus;
     /**
@@ -114,7 +114,7 @@ class paymentOrderResult extends paymentOrderRequest
     public $transactionCreated;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $transactionCurrency;
     /**
@@ -124,7 +124,7 @@ class paymentOrderResult extends paymentOrderRequest
     public $transactionId;
     /**
      * @access public
-     * @var tnstransactionStatus
+     * @var transactionStatus
      */
     public $transactionStatus;
 }

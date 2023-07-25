@@ -39,17 +39,17 @@ class outcomingTransactionDTO extends abstractBaseDTO
     public $cryptoCurrencyAmount;
     /**
      * @access public
-     * @var tnscoinName
+     * @var coinName
      */
     public $cryptoCurrencyCoinName;
     /**
      * @access public
-     * @var tnscurrency
+     * @var currency
      */
     public $currency;
     /**
      * @access public
-     * @var tnstransactionDirection
+     * @var transactionDirection
      */
     public $direction;
     /**
@@ -89,12 +89,12 @@ class outcomingTransactionDTO extends abstractBaseDTO
     public $startTime;
     /**
      * @access public
-     * @var tnstransactionStatus
+     * @var transactionStatus
      */
     public $status;
     /**
      * @access public
-     * @var tnstransactionName
+     * @var transactionName
      */
     public $transactionName;
     /**
@@ -104,7 +104,7 @@ class outcomingTransactionDTO extends abstractBaseDTO
     public $updatedTime;
     /**
      * @access public
-     * @var tnsverificationStatus
+     * @var verificationStatus
      */
     public $verificationStatus;
     /**

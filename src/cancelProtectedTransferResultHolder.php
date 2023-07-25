@@ -9,12 +9,12 @@ class cancelProtectedTransferResultHolder
 {
     /**
      * @access public
-     * @var tnsoperationResult
+     * @var soperationResult
      */
     public $operationResult;
     /**
      * @access public
-     * @var tnstransactionStatus
+     * @var stransactionStatus
      */
     public $transactionStatus;
 }

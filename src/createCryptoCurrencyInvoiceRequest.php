@@ -9,7 +9,7 @@ class createCryptoCurrencyInvoiceRequest extends moneyRequest
 {
     /**
      * @access public
-     * @var tnscoinName
+     * @var scoinName
      */
     public $coinName;
     /**
@@ -29,7 +29,7 @@ class createCryptoCurrencyInvoiceRequest extends moneyRequest
     public $subMerchantURL;
     /**
      * @access public
-     * @var tnstetherTransportProtocol
+     * @var stetherTransportProtocol
      */
     public $tetherTransportProtocol;
 }

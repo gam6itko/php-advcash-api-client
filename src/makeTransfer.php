@@ -14,7 +14,7 @@ class makeTransfer
     public $arg0;
     /**
      * @access public
-     * @var tnstypeOfTransaction
+     * @var typeOfTransaction
      */
     public $arg1;
     /**

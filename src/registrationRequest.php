@@ -24,7 +24,7 @@ class registrationRequest
     public $ip;
     /**
      * @access public
-     * @var tnssupportedLanguage
+     * @var supportedLanguage
      */
     public $language;
     /**
