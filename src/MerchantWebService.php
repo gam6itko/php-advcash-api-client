@@ -229,15 +229,23 @@ class MerchantWebService extends \SoapClient
      * @param array $arguments The argument list to check
      * @param array $validParameters A list of valid argument types
      * @return boolean true if arguments match against validParameters
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function _checkArguments($arguments, $validParameters)
     {
+        // adapt to Gam6itko\AdvCash\
+        $validParameters = array_map(function ($str) {
+            $type = trim($str, '()');
+            return "(Gam6itko\\AdvCash\\$type)";
+        }, $validParameters);
+
         $variables = "";
         foreach ($arguments as $arg) {
             $type = gettype($arg);
             if ($type == "object") {
                 $type = get_class($arg);
+            } else {
+                $type = "(Gam6itko\\AdvCash\\$type)";
             }
             $variables .= "(" . $type . ")";
         }
@@ -253,7 +261,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToAdvcashCard) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToAdvcashCardResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToAdvcashCard($mixed = null)
     {
@@ -272,7 +280,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToEcoinEU) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToEcoinEUResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToEcoinEU($mixed = null)
     {
@@ -291,7 +299,7 @@ class MerchantWebService extends \SoapClient
      * (validationCurrencyExchange) parameters
      * @param mixed,... See function description for parameter options
      * @return validationCurrencyExchangeResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationCurrencyExchange($mixed = null)
     {
@@ -310,7 +318,7 @@ class MerchantWebService extends \SoapClient
      * (history) parameters
      * @param mixed,... See function description for parameter options
      * @return historyResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function history($mixed = null)
     {
@@ -329,7 +337,7 @@ class MerchantWebService extends \SoapClient
      * (validateAccount) parameters
      * @param mixed,... See function description for parameter options
      * @return validateAccountResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateAccount($mixed = null)
     {
@@ -348,7 +356,7 @@ class MerchantWebService extends \SoapClient
      * (validateAccounts) parameters
      * @param mixed,... See function description for parameter options
      * @return validateAccountsResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateAccounts($mixed = null)
     {
@@ -367,7 +375,7 @@ class MerchantWebService extends \SoapClient
      * (validateCurrencyExchange) parameters
      * @param mixed,... See function description for parameter options
      * @return validateCurrencyExchangeResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateCurrencyExchange($mixed = null)
     {
@@ -386,7 +394,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToExmo) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToExmoResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToExmo($mixed = null)
     {
@@ -405,7 +413,7 @@ class MerchantWebService extends \SoapClient
      * (register) parameters
      * @param mixed,... See function description for parameter options
      * @return registerResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function register($mixed = null)
     {
@@ -424,7 +432,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToWex) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToWexResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToWex($mixed = null)
     {
@@ -443,7 +451,7 @@ class MerchantWebService extends \SoapClient
      * (findTransaction) parameters
      * @param mixed,... See function description for parameter options
      * @return findTransactionResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function findTransaction($mixed = null)
     {
@@ -462,7 +470,7 @@ class MerchantWebService extends \SoapClient
      * (confirmCryptoCurrencyWithdrawalInvoice) parameters
      * @param mixed,... See function description for parameter options
      * @return confirmCryptoCurrencyWithdrawalInvoiceResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function confirmCryptoCurrencyWithdrawalInvoice($mixed = null)
     {
@@ -481,7 +489,7 @@ class MerchantWebService extends \SoapClient
      * (findCryptoCurrencyWithdrawalInvoiceByOrderId) parameters
      * @param mixed,... See function description for parameter options
      * @return findCryptoCurrencyWithdrawalInvoiceByOrderIdResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function findCryptoCurrencyWithdrawalInvoiceByOrderId($mixed = null)
     {
@@ -500,7 +508,7 @@ class MerchantWebService extends \SoapClient
      * (makeCurrencyExchange) parameters
      * @param mixed,... See function description for parameter options
      * @return makeCurrencyExchangeResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function makeCurrencyExchange($mixed = null)
     {
@@ -519,7 +527,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToEmail) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToEmailResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToEmail($mixed = null)
     {
@@ -538,7 +546,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToBankCard) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToBankCardResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToBankCard($mixed = null)
     {
@@ -557,7 +565,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToAdvcashCard) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToAdvcashCardResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToAdvcashCard($mixed = null)
     {
@@ -576,7 +584,7 @@ class MerchantWebService extends \SoapClient
      * (transferBankCard) parameters
      * @param mixed,... See function description for parameter options
      * @return transferBankCardResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function transferBankCard($mixed = null)
     {
@@ -595,7 +603,7 @@ class MerchantWebService extends \SoapClient
      * (currencyExchange) parameters
      * @param mixed,... See function description for parameter options
      * @return currencyExchangeResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function currencyExchange($mixed = null)
     {
@@ -614,7 +622,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoney) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoney($mixed = null)
     {
@@ -633,7 +641,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToEcurrency) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToEcurrencyResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToEcurrency($mixed = null)
     {
@@ -652,7 +660,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToEcurrency) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToEcurrencyResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToEcurrency($mixed = null)
     {
@@ -671,7 +679,7 @@ class MerchantWebService extends \SoapClient
      * (transferAdvcashCard) parameters
      * @param mixed,... See function description for parameter options
      * @return transferAdvcashCardResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function transferAdvcashCard($mixed = null)
     {
@@ -690,7 +698,7 @@ class MerchantWebService extends \SoapClient
      * (createCryptoCurrencyWithdrawalInvoice) parameters
      * @param mixed,... See function description for parameter options
      * @return createCryptoCurrencyWithdrawalInvoiceResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function createCryptoCurrencyWithdrawalInvoice($mixed = null)
     {
@@ -709,7 +717,7 @@ class MerchantWebService extends \SoapClient
      * (validateBankCardTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return validateBankCardTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateBankCardTransfer($mixed = null)
     {
@@ -728,7 +736,7 @@ class MerchantWebService extends \SoapClient
      * (emailTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return emailTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function emailTransfer($mixed = null)
     {
@@ -747,7 +755,7 @@ class MerchantWebService extends \SoapClient
      * (makeTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return makeTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function makeTransfer($mixed = null)
     {
@@ -766,7 +774,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToEmail) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToEmailResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToEmail($mixed = null)
     {
@@ -785,7 +793,7 @@ class MerchantWebService extends \SoapClient
      * (withdrawalThroughExternalPaymentSystem) parameters
      * @param mixed,... See function description for parameter options
      * @return withdrawalThroughExternalPaymentSystemResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function withdrawalThroughExternalPaymentSystem($mixed = null)
     {
@@ -804,7 +812,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToBankCard) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToBankCardResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToBankCard($mixed = null)
     {
@@ -823,7 +831,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToEcoinEU) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToEcoinEUResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToEcoinEU($mixed = null)
     {
@@ -842,7 +850,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoneyToExmo) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyToExmoResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoneyToExmo($mixed = null)
     {
@@ -861,7 +869,7 @@ class MerchantWebService extends \SoapClient
      * (validateAdvcashCardTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return validateAdvcashCardTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateAdvcashCardTransfer($mixed = null)
     {
@@ -880,7 +888,7 @@ class MerchantWebService extends \SoapClient
      * (findPaymentByOrderId) parameters
      * @param mixed,... See function description for parameter options
      * @return findPaymentByOrderIdResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function findPaymentByOrderId($mixed = null)
     {
@@ -899,7 +907,7 @@ class MerchantWebService extends \SoapClient
      * (findCryptoCurrencyWithdrawalInvoiceById) parameters
      * @param mixed,... See function description for parameter options
      * @return findCryptoCurrencyWithdrawalInvoiceByIdResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function findCryptoCurrencyWithdrawalInvoiceById($mixed = null)
     {
@@ -918,7 +926,7 @@ class MerchantWebService extends \SoapClient
      * (validateWithdrawalThroughExternalPaymentSystem) parameters
      * @param mixed,... See function description for parameter options
      * @return validateWithdrawalThroughExternalPaymentSystemResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateWithdrawalThroughExternalPaymentSystem($mixed = null)
     {
@@ -937,7 +945,7 @@ class MerchantWebService extends \SoapClient
      * (cancelProtectedTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return cancelProtectedTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function cancelProtectedTransfer($mixed = null)
     {
@@ -956,7 +964,7 @@ class MerchantWebService extends \SoapClient
      * (createApi) parameters
      * @param mixed,... See function description for parameter options
      * @return createApiResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function createApi($mixed = null)
     {
@@ -975,7 +983,7 @@ class MerchantWebService extends \SoapClient
      * (createCryptoCurrencyInvoice) parameters
      * @param mixed,... See function description for parameter options
      * @return createCryptoCurrencyInvoiceResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function createCryptoCurrencyInvoice($mixed = null)
     {
@@ -994,7 +1002,7 @@ class MerchantWebService extends \SoapClient
      * (validateEmailTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return validateEmailTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateEmailTransfer($mixed = null)
     {
@@ -1013,7 +1021,7 @@ class MerchantWebService extends \SoapClient
      * (validateTransfer) parameters
      * @param mixed,... See function description for parameter options
      * @return validateTransferResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validateTransfer($mixed = null)
     {
@@ -1032,7 +1040,7 @@ class MerchantWebService extends \SoapClient
      * (validationSendMoney) parameters
      * @param mixed,... See function description for parameter options
      * @return validationSendMoneyResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function validationSendMoney($mixed = null)
     {
@@ -1051,7 +1059,7 @@ class MerchantWebService extends \SoapClient
      * (createBitcoinInvoice) parameters
      * @param mixed,... See function description for parameter options
      * @return createBitcoinInvoiceResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function createBitcoinInvoice($mixed = null)
     {
@@ -1070,7 +1078,7 @@ class MerchantWebService extends \SoapClient
      * (checkCurrencyExchange) parameters
      * @param mixed,... See function description for parameter options
      * @return checkCurrencyExchangeResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function checkCurrencyExchange($mixed = null)
     {
@@ -1089,7 +1097,7 @@ class MerchantWebService extends \SoapClient
      * (getBalances) parameters
      * @param mixed,... See function description for parameter options
      * @return getBalancesResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function getBalances($mixed = null)
     {
@@ -1108,7 +1116,7 @@ class MerchantWebService extends \SoapClient
      * (sendMoneyToWex) parameters
      * @param mixed,... See function description for parameter options
      * @return sendMoneyToWexResponse
-     * @throws Exception invalid function signature message
+     * @throws \Exception invalid function signature message
      */
     public function sendMoneyToWex($mixed = null)
     {

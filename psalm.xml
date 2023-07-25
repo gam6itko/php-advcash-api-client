@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <psalm
-    errorLevel="4"
+    errorLevel="2"
     resolveFromConfigFile="true"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
@@ -32,5 +32,20 @@
                 <referencedClass name="dateTime" />
             </errorLevel>
         </UndefinedDocblockClass>
+        <MissingConstructor>
+            <errorLevel type="suppress">
+                <directory name="src" />
+            </errorLevel>
+        </MissingConstructor>
+        <MissingParamType>
+            <errorLevel type="suppress">
+                <directory name="src" />
+            </errorLevel>
+        </MissingParamType>
+        <MissingReturnType>
+            <errorLevel type="suppress">
+                <directory name="src" />
+            </errorLevel>
+        </MissingReturnType>
     </issueHandlers>
 </psalm>
